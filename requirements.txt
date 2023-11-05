@@ -1,0 +1,12 @@
+python-louvain
+networkx
+numpy
+pandas
+seaborn
+matplotlib
+altair
+streamlit
+holoviews
+bokeh
+datashader
+scikit-image
