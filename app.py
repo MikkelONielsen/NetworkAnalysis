@@ -73,7 +73,7 @@ st.title("Network analysis")
 
     # Display dataset overview
 st.header("Dataset Overview")
-st.dataframe(df.head())
+st.dataframe(df.head(10))
 
 # Determine the weight threshold for the top 10%
 top_10_percent_weight_threshold = df['weight'].quantile(0.9)
@@ -163,9 +163,9 @@ graph = hv.Graph.from_networkx(G_sub, layout).opts(tools=['hover'], node_color='
 labels = hv.Labels(graph.nodes, ['x', 'y'], 'index')
 bundled = bundle_graph(graph)
 
-st.sidebar.title("Options")
+st.sidebar.title("Options for data analysis")
 choose = st.sidebar.selectbox(
-    "Select an option", 
+    "Select an option for data analysis", 
     ["Visualisations",
      "Data Calculations"]
 )
@@ -177,9 +177,9 @@ if choose == "Visualisations":
     visualization_option = st.selectbox(
         "Select Visualization", 
         ["Distributions of weights",
-         "Network over the nodes with highest edges",
+         "Nodes with the most edges in a network",
          "Network with communities",
-         "Filtered network to top 200 nodesand their communities"]  # This should match the if condition below
+         "Filtered network to top 200 nodes and their communities"]  # This should match the if condition below
     )
     # Visualizations based on user selection
     if visualization_option == "Distributions of weights":  # This should match the option above
@@ -191,7 +191,7 @@ if choose == "Visualisations":
         plt.ylabel('Frequency')
         plt.grid(True)
         st.pyplot(plt)  # Correctl2y display the plot in Streamlit
-    elif visualization_option == "Network over the nodes with highest edges":
+    elif visualization_option == "Nodes with the most edges in a network":
         plt.figure(figsize=(10, 10))
         pos = nx.spring_layout(G, k=0.15, iterations=20)
         nx.draw_networkx(G, pos, with_labels=True, node_size=50, font_size=10, edge_color='grey', linewidths=1)
@@ -208,7 +208,7 @@ if choose == "Visualisations":
         plt.title('Network with Communities')
         plt.axis('off')
         st.pyplot(plt)
-    elif visualization_option == "Filtered network to top 200 nodesand their communities":
+    elif visualization_option == "Filtered network to top 200 nodes and their communities":
         for node, community in partition.items():
             G_full.nodes[node]['community'] = community
         # Sorting nodes by degree centrality
