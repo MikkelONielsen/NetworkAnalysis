@@ -69,7 +69,7 @@ def load_data():
 
 df = load_data()
 # Set the app title and sidebar header
-st.title("Network analysis")
+st.title("Network analysis for Twitter Interaction Network for the US Congress")
 
     # Display dataset overview
 st.header("Dataset Overview")
