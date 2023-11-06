@@ -274,13 +274,13 @@ st.header("Main conclusions from the network analysis")
 st.header("Top 5 betweenness centrality twitter profiles")
 st.markdown("""Nancy Pelosi (@SpeakerPelosi): Democratic congresswoman representing California's 11th district, and the 52nd Speaker of the House known for her legislative influence and leadership​1​​2​. 
 
-            Kevin McCarthy (@GOPLeader): Republican congressman serving as the House Minority Leader, representing California's 23rd district, and a prominent Republican voice in the House​3​.
+Kevin McCarthy (@GOPLeader): Republican congressman serving as the House Minority Leader, representing California's 23rd district, and a prominent Republican voice in the House​3​.
 
-            Steny Hoyer (@LeaderHoyer): A Democratic politician and attorney, long-serving U.S. Representative for Maryland's 5th congressional district, and former House Majority Leader​4​​5​.
+Steny Hoyer (@LeaderHoyer): A Democratic politician and attorney, long-serving U.S. Representative for Maryland's 5th congressional district, and former House Majority Leader​4​​5​.
 
-            Scott Franklin (@RepFranklin): Republican congressman representing Florida's 18th district, a businessman, and has served in Congress since 2021​6​.
+Scott Franklin (@RepFranklin): Republican congressman representing Florida's 18th district, a businessman, and has served in Congress since 2021​6​.
 
-            John Cornyn (@JohnCornyn): Republican senior United States Senator from Texas, attorney, and former jurist, including service on the Texas Supreme Court and as the state's Attorney General​7​.""")
+John Cornyn (@JohnCornyn): Republican senior United States Senator from Texas, attorney, and former jurist, including service on the Texas Supreme Court and as the state's Attorney General​7​.""")
 
 st.markdown("""References:
 
