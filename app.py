@@ -299,7 +299,7 @@ Scott Franklin - Ballotpedia""")
 st.subheader("Conclusion")
 
 st.markdown(""" 
-Eigenvector centrality is a measure that tells us not just who is connected, but who is connected to the influencers. 
-On Twitter, a profile with high eigenvector centrality means it's not only followed by many users, but by users who themselves have a lot of followers. 
-This suggests that their tweets have a higher chance of being seen and shared widely, making their potential to shape conversations and influence their network much greater.
+Eigenvector centrality is like a popularity score that looks at not just how many followers a Twitter profile has, but also who those followers are. 
+If these top 5 profiles have the highest eigenvector centrality, it means they're not just followed by many people, but by the right kind of people—other influential accounts. 
+This creates a ripple effect, where their tweets are seen and shared by users who have a big audience themselves. So, a high eigenvector centrality on Twitter suggests that these profiles are super influential and can make their tweets travel far and wide.
 """)
