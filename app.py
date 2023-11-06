@@ -164,7 +164,7 @@ labels = hv.Labels(graph.nodes, ['x', 'y'], 'index')
 bundled = bundle_graph(graph)
 
 st.sidebar.title("Options")
-choose = st.sidebar.radio(
+choose = st.sidebar.selectbox(
     "Select an option", 
     ["Visualisations",
      "Data Calculations"]
