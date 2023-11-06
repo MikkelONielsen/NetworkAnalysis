@@ -270,9 +270,9 @@ if choose == "Data Calculations":
         with tab3:
             st.dataframe(centrality_measures_df.sort_values(by=['Eigenvector Centrality'], ascending=False).head(10))
 
-st.header("Main conclusions from the network analysis")
+st.header("Main take aways from the network analysis")
 
-st.subheader("Top 5 betweenness centrality twitter profiles")
+st.subheader("Top 5 eigenvector centrality twitter profiles")
 
 st.markdown("""Nancy Pelosi (@SpeakerPelosi): Democratic congresswoman representing California's 11th district, and the 52nd Speaker of the House known for her legislative influence and leadership​1​​2​. 
 
@@ -280,27 +280,26 @@ Kevin McCarthy (@GOPLeader): Republican congressman serving as the House Minorit
 
 Steny Hoyer (@LeaderHoyer): A Democratic politician and attorney, long-serving U.S. Representative for Maryland's 5th congressional district, and former House Majority Leader​4​​5​.
 
-Scott Franklin (@RepFranklin): Republican congressman representing Florida's 18th district, a businessman, and has served in Congress since 2021​6​.
+Bobby Rush (@RepBobbyRush): Democratic Party. A former U.S. Representative for Illinois's 1st congressional district, a civil rights activist, and co-founder of the Illinois Black Panther Party. He was first elected to Congress in 1992.
 
-John Cornyn (@JohnCornyn): Republican senior United States Senator from Texas, attorney, and former jurist, including service on the Texas Supreme Court and as the state's Attorney General​7​.""")
+Scott Franklin (@RepFranklin): Republican congressman representing Florida's 18th district, a businessman, and has served in Congress since 2021​6​.""")
 
 st.markdown("""References:
 
-1: Sotwe.com - Nancy Pelosi's Twitter Profile Overview
+Nancy Pelosi @SpeakerPelosi, Twitter Profile - twstalker.com
 
-2: Twstalker.com - Nancy Pelosi's Twitter Profile and Activity
+Kevin McCarthy - Wikipedia
 
-3: Thecatholicmonitor.com - Kevin McCarthy's Twitter Profile Information
+Steny Hoyer - Wikipedia
 
-4: Wikipedia - Steny Hoyer's Political Party Affiliation
+Congressman Scott Franklin - official website
 
-5: Wikipedia - Steny Hoyer's Career Summary
-
-6: Wikipedia - Scott Franklin's Congressional Service and Party Affiliation
-
-7: Wikipedia - John Cornyn's Career and Party Affiliation""")
+Scott Franklin - Ballotpedia""")
 
 st.subheader("Conclusion")
 
-st.markdown(""" The betweenness centrality in a good indicator for how connected (back and forth) the twitter profile is to its following, and a high betweenness centality indicates high influence on its following...
+st.markdown(""" 
+Eigenvector centrality is a measure that tells us not just who is connected, but who is connected to the influencers. 
+On Twitter, a profile with high eigenvector centrality means it's not only followed by many users, but by users who themselves have a lot of followers. 
+This suggests that their tweets have a higher chance of being seen and shared widely, making their potential to shape conversations and influence their network much greater.
 """)
