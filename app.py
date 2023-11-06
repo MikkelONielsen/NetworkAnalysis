@@ -271,7 +271,9 @@ if choose == "Data Calculations":
             st.dataframe(centrality_measures_df.sort_values(by=['Eigenvector Centrality'], ascending=False).head(10))
 
 st.header("Main conclusions from the network analysis")
-st.header("Top 5 betweenness centrality twitter profiles")
+
+st.subheader("Top 5 betweenness centrality twitter profiles")
+
 st.markdown("""Nancy Pelosi (@SpeakerPelosi): Democratic congresswoman representing California's 11th district, and the 52nd Speaker of the House known for her legislative influence and leadership​1​​2​. 
 
 Kevin McCarthy (@GOPLeader): Republican congressman serving as the House Minority Leader, representing California's 23rd district, and a prominent Republican voice in the House​3​.
@@ -297,3 +299,8 @@ st.markdown("""References:
 6: Wikipedia - Scott Franklin's Congressional Service and Party Affiliation
 
 7: Wikipedia - John Cornyn's Career and Party Affiliation""")
+
+st.subheader("Conclusion")
+
+st.markdown(""" The betweenness centrality in a good indicator for how connected (back and forth) the twitter profile is to its following, and a high betweenness centality indicates high influence on its following...
+""")
